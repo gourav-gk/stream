@@ -116,7 +116,7 @@
         </button>
       </div>
     </div>
-    <video id="video" src="assets/Video.mp4">
+    <video id="video" >
       <track kind="captions" srclang="en" src="assets/subtitles.vtt">
     </video>
   </div>
@@ -130,7 +130,7 @@
     
     hls.on(Hls.Events.MANIFEST_PARSED, function(event,data){
       const availableQualities = hls.levels.map((l)=> l.height)
-      updateQuality(availableQualities[0])
+      //updateQuality(availableQualities[0])
     })
 
     
