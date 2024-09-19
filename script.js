@@ -308,8 +308,9 @@ function updateQuality(newQuality){
           window.hls.currentLevel = levelIndex
           document.getElementById("quality-val").textContent = `${newQuality}p`
       }
+      backSetting()
   })
-  backSetting()
+  
 }
 
 function backSetting(){
